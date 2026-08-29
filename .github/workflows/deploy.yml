@@ -23,5 +23,12 @@ jobs:
         env:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
 
+      - name: 🔎 Verify Railway target
+        run: |
+          railway status --json
+          railway domain list --service letourdedour-site --json
+        env:
+          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+
       - name: ✅ Done
         run: echo "✨ letourdedour.com déployé — JS-Innov.IA"
