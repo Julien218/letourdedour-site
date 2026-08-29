@@ -17,7 +17,9 @@ jobs:
         run: npm install -g @railway/cli
 
       - name: 🚀 Deploy to Railway
-        run: railway up --detach --service letourdedour-site
+        # Attend la fin du build : un workflow vert signifie désormais que
+        # la nouvelle version est réellement disponible, pas seulement envoyée.
+        run: railway up --ci --service letourdedour-site
         env:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
 
