@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Résultats des votes mascottes — Le Tour de Dour</title>
+<meta name="description" content="Résultats officiels du vote des mascottes du Tour de Dour : Lion, Renard, Canari Mineur, Biche, Ours et Abeille — récapitulatif des votes et prénoms proposés par les habitants de Dour." />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://www.letourdedour.com/votes-mascottes" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.letourdedour.com/votes-mascottes" />
+<meta property="og:title" content="Résultats des votes mascottes — Le Tour de Dour" />
+<meta property="og:description" content="Découvrez le récapitulatif des votes et des prénoms proposés pour les mascottes du Tour de Dour." />
+<meta property="og:image" content="https://www.letourdedour.com/assets/canari-officiel.png" />
+<meta property="og:locale" content="fr_BE" />
+<meta property="og:site_name" content="Le Tour de Dour" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Résultats des votes mascottes — Le Tour de Dour" />
+<meta name="twitter:description" content="Récapitulatif des votes et des prénoms proposés pour les mascottes du Tour de Dour." />
+<meta name="twitter:image" content="https://www.letourdedour.com/assets/canari-officiel.png" />
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Résultats des votes mascottes — Le Tour de Dour",
+  "url": "https://www.letourdedour.com/votes-mascottes",
+  "description": "Résultats du vote des mascottes du Tour de Dour et prénoms proposés par les habitants.",
+  "inLanguage": "fr-BE",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Le Tour de Dour",
+    "url": "https://www.letourdedour.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "JS-Innov.IA",
+    "url": "https://www.jsinnovia.com"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Olivier Trevis",
+    "url": "https://www.oliviertrevis.be"
+  }
+}
+</script>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #0A0A0B;
+    color: #F5F5F7;
+    padding: 40px 20px;
+    min-height: 100vh;
+  }
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 8px;
+    background: linear-gradient(135deg, #FFB800, #FF4D00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .subtitle {
+    text-align: center;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.4);
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    margin-bottom: 32px;
+  }
+  .total-banner {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+  }
+  .total-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 16px 24px;
+    text-align: center;
+    min-width: 140px;
+  }
+  .total-card .num {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #FFB800;
+  }
+  .total-card .label {
+    font-size: 0.7rem;
+    color: rgba(255,255,255,0.45);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-top: 4px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255,255,255,0.02);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.06);
+  }
+  thead tr {
+    background: rgba(255,184,0,0.08);
+  }
+  th {
+    padding: 18px 16px;
+    text-align: left;
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: rgba(255,184,0,0.7);
+  }
+  th:first-child { padding-left: 24px; }
+  th:last-child { text-align: center; padding-right: 24px; }
+  td {
+    padding: 18px 16px;
+    border-top: 1px solid rgba(255,255,255,0.04);
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.85);
+  }
+  td:first-child { padding-left: 24px; }
+  td:last-child { text-align: center; padding-right: 24px; }
+  .mascotte-cell {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .emoji {
+    font-size: 1.6rem;
+  }
+  .mascotte-name {
+    font-weight: 700;
+    font-size: 0.95rem;
+  }
+  .vote-badge {
+    display: inline-block;
+    background: rgba(255,184,0,0.12);
+    border: 1px solid rgba(255,184,0,0.25);
+    color: #FFB800;
+    font-weight: 800;
+    font-size: 0.85rem;
+    padding: 4px 12px;
+    border-radius: 20px;
+  }
+  .prenoms {
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.5;
+  }
+  .bar-container {
+    width: 100%;
+    height: 8px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 6px;
+  }
+  .bar {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.5s;
+  }
+  .total-cell {
+    font-weight: 900;
+    font-size: 1.1rem;
+    color: #F5F5F7;
+  }
+  .footer {
+    text-align: center;
+    margin-top: 28px;
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.3);
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>🐯 Vote Mascottes — Tour de Dour</h1>
+  <p class="subtitle">Récapitulatif tous systèmes confondus — 13 août 2026</p>
+
+  <div class="total-banner">
+    <div class="total-card">
+      <div class="num">145</div>
+      <div class="label">Total participations</div>
+    </div>
+    <div class="total-card">
+      <div class="num">17</div>
+      <div class="label">Votes officiels</div>
+    </div>
+    <div class="total-card">
+      <div class="num">127</div>
+      <div class="label">Questionnaire libre</div>
+    </div>
+    <div class="total-card">
+      <div class="num">1</div>
+      <div class="label">Vote simple fiche</div>
+    </div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Mascotte</th>
+        <th>Vote officiel</th>
+        <th>Questionnaire</th>
+        <th>Total estimé</th>
+        <th>Prénoms proposés</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <div class="mascotte-cell">
+            <span class="emoji">🦊</span>
+            <span class="mascotte-name" style="color:#FF4D00;">Le Renard</span>
+          </div>
+        </td>
+        <td><span class="vote-badge">6</span></td>
+        <td>~25</td>
+        <td class="total-cell" style="color:#FF4D00;">~31</td>
+        <td class="prenoms">Foxxy, Renardhinio, Dourix, Fox, Le renardour, Robie</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="mascotte-cell">
+            <span class="emoji">🐤</span>
+            <span class="mascotte-name" style="color:#D4FF00;">Le Canari Mineur</span>
+          </div>
+        </td>
+        <td><span class="vote-badge">7</span></td>
+        <td>~6</td>
+        <td class="total-cell" style="color:#D4FF00;">~13</td>
+        <td class="prenoms">Pépite ×3, Pépité, Bunny, Francky, Dourééé, Jadour</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="mascotte-cell">
+            <span class="emoji">🦁</span>
+            <span class="mascotte-name" style="color:#FFB800;">Le Lion</span>
+          </div>
+        </td>
+        <td><span class="vote-badge">1</span></td>
+        <td>~13</td>
+        <td class="total-cell" style="color:#FFB800;">~14</td>
+        <td class="prenoms">Gaston</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="mascotte-cell">
+            <span class="emoji">🐝</span>
+            <span class="mascotte-name" style="color:#FFB800;">L'Abeille (hors finalistes)</span>
+          </div>
+        </td>
+        <td><span class="vote-badge" style="opacity:0.4;">—</span></td>
+        <td>~6</td>
+        <td class="total-cell" style="opacity:0.5;">~6</td>
+        <td class="prenoms" style="opacity:0.5;">— (non finaliste)</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="mascotte-cell">
+            <span class="emoji">🐻</span>
+            <span class="mascotte-name" style="color:#00CCFF;">L'Ours</span>
+          </div>
+        </td>
+        <td><span class="vote-badge">2</span></td>
+        <td>~3</td>
+        <td class="total-cell" style="color:#00CCFF;">~5</td>
+        <td class="prenoms">Carlo, Doudour</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="mascotte-cell">
+            <span class="emoji">🦌</span>
+            <span class="mascotte-name" style="color:#00FFA3;">La Biche</span>
+          </div>
+        </td>
+        <td><span class="vote-badge">1</span></td>
+        <td>~2</td>
+        <td class="total-cell" style="color:#00FFA3;">~3</td>
+        <td class="prenoms">Bidouche</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="footer">Tour de Dour · Olivier Trevis · JS-Innov.IA</p>
+</div>
+</body>
+</html>
