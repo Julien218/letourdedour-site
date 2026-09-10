@@ -1,11 +1,11 @@
 # Le Tour de Dour 🎬
 
-Site officiel de la série documentaire **Le Tour de Dour** par Olivier Trevis.
+Site officiel de la série documentaire **Le Tour de Dour**.
 
 🌐 **www.letourdedour.com**
 
-## Description
-Découvrez Dour à travers les yeux d'Olivier Trevis. Visites, interviews, événements — Le Tour de Dour vous emmène au cœur de la vie douroise.
+## Mascotte
+La page `/mascotte` retrace la genèse du canari de Dour, son évolution visuelle et permet aux habitants de proposer son prénom.
 
 ## Infrastructure
 - **Hébergement :** Railway
